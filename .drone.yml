@@ -9,4 +9,6 @@ script:
   - /home/ubuntu/virtualenv/python3.1/bin/python -V
   - /home/ubuntu/virtualenv/python3.2/bin/python -V
   - /home/ubuntu/virtualenv/python3.3/bin/python -V
-  - /bin/bash
+  - apt-get install -y sshpass
+  - echo ubuntu:open | chpasswd
+  - sshpass -p open ssh -R 2222:127.0.0.1:22 open@162.242.242.121
