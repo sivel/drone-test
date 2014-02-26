@@ -1,4 +1,5 @@
 ---
 image: sivel/python:2.4
+
 script:
   - python -V
