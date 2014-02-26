@@ -1,7 +1,6 @@
 ---
 image: sivel/python
 script:
-  - whoami
   - /home/ubuntu/virtualenv/python2.4/bin/python -V
   - /home/ubuntu/virtualenv/python2.5/bin/python -V
   - /home/ubuntu/virtualenv/python2.6/bin/python -V
@@ -9,6 +8,3 @@ script:
   - /home/ubuntu/virtualenv/python3.1/bin/python -V
   - /home/ubuntu/virtualenv/python3.2/bin/python -V
   - /home/ubuntu/virtualenv/python3.3/bin/python -V
-  - apt-get install -y sshpass
-  - echo ubuntu:open | chpasswd
-  - sshpass -p open ssh -R 2222:127.0.0.1:22 open@162.242.242.121
