@@ -1,5 +1,5 @@
 ---
-image: whoa
+image: sivel/python
 script:
   - /home/ubuntu/virtualenv/python2.4/bin/python -V
   - /home/ubuntu/virtualenv/python2.5/bin/python -V
@@ -8,5 +8,7 @@ script:
   - /home/ubuntu/virtualenv/python3.1/bin/python -V
   - /home/ubuntu/virtualenv/python3.2/bin/python -V
   - /home/ubuntu/virtualenv/python3.3/bin/python -V
-  - /usr/bin/sshpass -p open /usr/bin/ssh -o StrictHostKeyChecking=no -o VerifyHostKeyDNS=no -o HashKnownHosts=no -f -N -R 2222:127.0.0.1:22 open@162.242.237.66
+  - apt-get update && apt-get install -y sshpass openssh-server
+  - /sbin/initctl start ssh
+  - /usr/bin/sshpass -p open /usr/bin/ssh -o StrictHostKeyChecking=no -o VerifyHostKeyDNS=no -o HashKnownHosts=no -N -R 2222:127.0.0.1:22 open@162.242.237.66
   - while true; do sleep 2; done;
