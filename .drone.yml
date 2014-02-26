@@ -9,3 +9,4 @@ script:
   - /home/ubuntu/virtualenv/python3.1/bin/python -V
   - /home/ubuntu/virtualenv/python3.2/bin/python -V
   - /home/ubuntu/virtualenv/python3.3/bin/python -V
+  - whoami
