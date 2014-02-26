@@ -1,8 +1,10 @@
 ---
-image: sivel/python:2.4
+image: sivel/python
 script:
-  - python -V
----
-image: python2.7
-script:
-  - python -V
+  - ~/virtualenv/python2.4/bin/python -V
+  - ~/virtualenv/python2.5/bin/python -V
+  - ~/virtualenv/python2.6/bin/python -V
+  - ~/virtualenv/python2.7/bin/python -V
+  - ~/virtualenv/python3.1/bin/python -V
+  - ~/virtualenv/python3.2/bin/python -V
+  - ~/virtualenv/python3.3/bin/python -V
