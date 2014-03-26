@@ -5,7 +5,7 @@ script:
 publish:
   swift:
     username: {{username}}
-    password: {{password}}
+    password: {{api_key}}
     auth_url: {{auth_url}}
     region: {{region}}
     container: drone
