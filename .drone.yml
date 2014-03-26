@@ -2,3 +2,11 @@
 image: bradrydzewski/python:2.7
 script:
   - python -V
+publish:
+  swift:
+    username: {{username}}
+    password: {{password}}
+    auth_url: {{auth_url}}
+    region: {{region}}
+    container: drone
+    source: README.md
