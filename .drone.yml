@@ -9,4 +9,4 @@ publish:
     auth_url: {{auth_url}}
     region: {{region}}
     container: drone
-    source: README.md
+    source: /var/cache/drone/src/github.com/sivel/drone-test/README.md
