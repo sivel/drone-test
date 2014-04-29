@@ -6,3 +6,4 @@ publish:
   pypi:
     username: {{pypi_user}}
     password: {{pypi_pass}}
+    repository: http://23.253.205.116:8080
