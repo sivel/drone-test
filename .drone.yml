@@ -11,4 +11,3 @@ publish:
     container: drone
     source: /var/cache/drone/src/github.com/sivel/drone-test/README.md
     target: README.md
-    branch: master
