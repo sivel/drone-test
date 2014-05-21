@@ -1,13 +1,4 @@
 ---
-image: bradrydzewski/python:2.7
+image: go1.2
 script:
-  - python -V
-publish:
-  swift:
-    username: {{username}}
-    password: {{password}}
-    auth_url: {{auth_url}}
-    region: {{region}}
-    container: drone
-    source: $DRONE_BUILD_DIR
-    branch: master
+  - go version
