@@ -5,10 +5,9 @@ script:
 publish:
   swift:
     username: {{username}}
-    password: {{api_key}}
+    password: {{password}}
     auth_url: {{auth_url}}
     region: {{region}}
     container: drone
-    source: /var/cache/drone/src/github.com/sivel/drone-test/README.md
-    target: README.md
+    source: $DRONE_BUILD_DIR
     branch: master
