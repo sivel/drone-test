@@ -1,4 +1,15 @@
 ---
 image: go1.2
+
 script:
   - go version
+
+notify:
+  slack:
+    room: #test
+    team: {{slack_team}}
+    username: drone
+    token: {{slack_token}}
+    on_started: true
+    on_success: true
+    on_failure: true
